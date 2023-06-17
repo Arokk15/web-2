@@ -1,0 +1,135 @@
+*{
+    list-style: none;
+    font-family: cursive;
+    padding:0;
+    margin:0;
+
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    background-image: url("bg1.jpg");
+    background-size:cover;
+    height: 100%;
+    border:5px solid;
+
+}
+.log{
+    display:flex;
+    justify-content: end;
+}
+
+.title{
+    text-align: center;
+    color:hsl(0, 0%, 75%)
+}
+.menu{
+    
+    background-color: rgba(158, 158, 158, 0.1);
+    width:99%;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    height:fit-content;
+    border-radius: 10px;
+    
+}
+
+.menu ul{
+    display:flex;
+    margin-top:0;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    margin-top:0;
+    align-self: center;
+    color:hsl(0, 0%, 75%);
+}
+
+.log li{
+    margin:0 20px;
+    color:hsl(0, 0%, 75%);
+}
+
+#btn h3{
+    background-color: rgba(12, 12, 12, 0.301);
+    border:2px solid ;
+    width:fit-content;
+    height:fit-content;
+    color:hsl(0, 0%, 75%);
+    padding:12px;
+    border-radius:10px;
+    margin:auto;
+}
+.header p{
+    text-align: center;
+    margin-top: 18%;
+    font-size: 40px;
+    color:hsl(0, 0%, 75%);
+
+
+}
+
+#btn{
+    margin-bottom: 200px;
+}
+
+#log_f{
+    position: absolute;
+    z-index: +1;
+    background-color: rgba(255, 228, 196, 0.377);
+    font-size:25px;
+    display:inline;
+    width:500px;
+    /* login height:390px;*/
+    height:500px;
+    overflow-y: hidden;
+    text-align: center;
+    border-radius: 50px;
+    right:-500px
+}
+#log_f *{
+    padding:5px
+}
+
+#log_f input{
+    width:60%;
+    border: none;
+    border-radius: 10px;
+}
+#log_f button{
+    width:70px;
+    font-size:medium;
+    border-radius: 20px;
+}
+
+#log_sheet{
+    transform: translateY(0);
+
+}
+
+.mens{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(0,300px));
+    border: 2px solid black;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin:10px
+}
+.mens img{
+    width: 300px;
+
+}
+
+.mens div{
+    z-index: 1;
+}
+.mens #mc1:hover{
+    border:2px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.308);
+    z-index: 2;
+    height: 450px;
+
+}
