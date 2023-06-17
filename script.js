@@ -1,38 +1,51 @@
 const loginf=document.querySelector("#login")
 const crt=document.querySelector("#reg")
 
-console.log(loginf)
+console.log(document.querySelector("#log_f").style)
 
 
 console.log(document.querySelector("#log_f").style.right)
 
 loginf.addEventListener("click",()=>{
 
-    if(document.querySelector("#log_f").style.right=="-500px"){
+    if(document.querySelector("#log_f").style.display==""){
         console.log("hhhhhhhhhh")
-        document.querySelector("#log_f").style.right="0"
+        document.querySelector("#log_f").style.display="inline"
         document.querySelector("#log_f").style.height="390px"
         document.querySelector("#log_sheet").style.margin="auto"
-        console.log("if",document.querySelector("#log_f").style.right)
+    }
+
+    else if(document.querySelector("#log_f").style.display=="inline" && document.querySelector("#log_f").style.height=="500px" ){
+        document.querySelector("#log_f").style.display="inline"
+        document.querySelector("#log_f").style.height="390px"
+        document.querySelector("#log_sheet").style.margin="auto"
+        document.querySelector("#log_sheet").style.transform="translateY(0)"
     }
     else{
-        document.querySelector("#log_f").style.right="-500px"
+        document.querySelector("#log_f").style.display=''
         console.log("else",document.querySelector("#log_f").style.right)
     }
 
 })
 crt.addEventListener("click",()=>{
+    
 
-    if(document.querySelector("#log_f").style.right=="-500px"){
-        console.log("hhhhhhhhhh")
-        document.querySelector("#log_f").style.right="0"
+    if(document.querySelector("#log_f").style.display==""){
+        document.querySelector("#log_f").style.display="inline"
         document.querySelector("#log_sheet").style.transform="translateY(-390px)"
         document.querySelector("#log_f").style.height="500px"
         document.querySelector("#log_sheet").style.margin="auto"
         console.log("if",document.querySelector("#log_f").style.right)
     }
+    else if(document.querySelector("#log_f").style.display=="inline" && document.querySelector("#log_f").style.height=="390px" ){
+        document.querySelector("#log_f").style.display="inline"
+        document.querySelector("#log_sheet").style.transform="translateY(-390px)"
+        document.querySelector("#log_f").style.height="500px"
+        document.querySelector("#log_sheet").style.margin="auto"
+
+    }
     else{
-        document.querySelector("#log_f").style.right="-500px"
+        document.querySelector("#log_f").style.display=''
         console.log("else",document.querySelector("#log_f").style.right)
     }
 
