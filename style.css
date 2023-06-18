@@ -119,14 +119,45 @@ a{
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(0,250px));
     justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .mens img{
     width: 250px;
 }
 
+.mens div{
+    text-align: center;
+    width:240px;
+    height:fit-content;
+    margin:10px auto;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.womens{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(0,250px));
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.womens img{
+    width: 250px;
+}
+
+.womens div{
+    text-align: center;
+    width:240px;
+    height:fit-content;
+    margin:10px auto;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
 
 
-@media(max-width:768px){
+
+@media(max-width:425px){
     .mens{
         display:block;
         background-color: rgba(0, 0, 0, 0.13);
@@ -142,11 +173,34 @@ a{
     }
     .mens div{
         text-align: center;
-        width:fit-content;
+        width:240px;
         height:fit-content;
         margin:10px auto;
-
-
+        background-color: aliceblue;
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+    .womens{
+        display:block;
+        background-color: rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+        margin: 10px;
+        padding:5px
+    }
+    .womens img {
+        width:240px;
+    }
+    .womens p{
+        text-align: center;
+    }
+    .womens div{
+        text-align: center;
+        width:240px;
+        height:fit-content;
+        margin:10px auto;
+        background-color: aliceblue;
+        padding-bottom: 20px;
+        border-radius: 20px;
     }
 
 }
